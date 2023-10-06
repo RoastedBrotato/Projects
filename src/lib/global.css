@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root{
+        --bg-primary: rgb(255, 255, 255);
+        --bg-primary-light: rgba(255, 255, 255, 0.747);
+        --bg-primary-lighter: rgba(255, 255, 255, 0.363);
+        --bg-secondary-lighter: rgb(59, 58, 58);
+        --bg-secondary-lighter: rgb(90, 90, 90);
+        --bg-primary-invert: rgb(0, 0, 0);
+    }
+
+    [data-theme="taters"]{
+        --bg-primary: yellow;
+        --bg-primary-light: rgba(255, 255, 255, 0.747);
+        --bg-primary-lighter: rgba(255, 255, 255, 0.363);
+        --bg-secondary-lighter: pink;
+        --bg-secondary-lighter: green;
+        --bg-primary-invert: rgb(0, 0, 0);
+    }
+}
